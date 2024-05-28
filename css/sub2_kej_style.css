@@ -1,0 +1,113 @@
+@charset "utf-8";
+
+
+
+main{}
+.sub_bg{}
+.sub_bg img{}
+
+section{
+/*  position: relative;*/
+  height: 1000px;
+}
+
+
+.all{
+  text-align: center;
+  top: 300px;
+  left: 100px;
+}
+.all::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+.all li{
+  float: left;
+  position: relative;
+}
+.all li.active>a{
+  background: #000000;
+  color: #fff;
+}
+.all>li>a:hover{
+  box-shadow: 0 0 3px #000;
+}
+.all>li>a{
+  font-size: 1.6rem;
+  display: inline-block;
+  background: #d8c074;
+  padding: 5px;
+  width: 150px;
+  margin: 15px;
+  border-radius: 50px;
+}
+.all>li>div{
+  position: absolute;
+  width: 1200px;
+  height: 0;
+  overflow: hidden;
+}
+.all>li.active>div{
+  height: 1000px;
+}
+.father h3,.mother h3{
+  font-size: 2rem;
+  padding: 2rem;
+  letter-spacing: 3px;
+}
+.icon img{
+  margin-bottom: 3rem;
+}
+#slider{
+  width: 900px;
+  margin: auto;
+}
+
+.slider{
+	position: relative;
+	height: 580px;
+}
+.slider li{
+	position: absolute;
+	left: 430px;
+	height: 550px;
+}
+.slider1{
+	position: relative;
+	height: 580px;
+}
+.slider1 li{
+	position: absolute;
+	left: 430px;
+	height: 550px;
+}
+
+#bx-pager{
+	overflow: hidden;
+}
+#bx-pager a{
+	float: left;
+	
+}
+#bx-pager a img{
+	width: 220px;
+	padding: 10px;
+}
+#bx-pager1{
+	overflow: hidden;
+}
+#bx-pager1 a{
+	float: left;
+	
+}
+#bx-pager1 a img{
+	width: 220px;
+	padding: 10px;
+}
+
+.mother{
+	position: absolute;
+	left: -190px;
+}
+

@@ -1,0 +1,454 @@
+@charset "utf-8";
+
+
+
+main{
+	position: relative;
+/*	width: 1920px;*/
+	
+}
+
+.slide_t{
+	position: absolute;
+	top: 15%;
+	left: 10%;
+	background: rgba(0, 0, 0, 0.59);
+	padding: 1vw;
+	border-radius: 10px;
+}
+.slide_t h3{
+	font-size: 1.5vw;
+	color: #faaaaa;
+	
+}
+
+.slide_t img{
+	width: 20vw;
+	padding-bottom: 1vw;
+	padding-top: 0.5vw;
+}
+.slide_t p b{
+	font-size: 1.2vw;
+	
+	
+}
+.slide_t p{
+	color: #fff8f8;
+	font-size: 1vw;
+	padding-bottom: 1vw;
+}
+.slide_t:hover a{
+	
+}
+.slide_t a{
+	width: 5vw;
+	height: 5vw;
+	background: url("../image/more.png") no-repeat;
+	background-size: contain;
+	
+}
+.slide_t a:hover{
+	width: 5vw;
+	height: 5vw;
+	background: url("../image/more_h.png") no-repeat;
+	background-size: contain;
+	
+}
+
+.vid{
+	position: fixed;
+	bottom: 300px;
+	left: 10px;
+	z-index: 99;
+    display: none;
+}
+.vid img{
+	width: 310px;
+	top: -15px;
+	position: absolute;
+	left: 60px;
+	
+}
+video{
+	position: absolute;
+	width: 300px;
+	top: 78px;
+	left: 65px;
+}
+.vid button{
+  position: absolute;
+  top: 241px;
+  left: 311px;
+  z-index: 10;
+  background: #fff;
+  padding: 3px;
+  cursor: pointer;
+  font-size: 1.3rem;
+  font-weight: bold;
+  animation:but 2s infinite alternate;
+  border-radius: 50px;
+  line-height: 27px;
+}
+
+.vid button:hover{
+  background: #000;
+  color: #fff;
+}
+
+@keyframes but{
+  0%{
+    opacity:0.4;
+  }
+  100%{
+    opacity:1;
+  }
+}
+section{}
+#modal{
+  position: fixed;
+  top: 0;left: 0;right: 0;bottom: 0;
+  background: rgba(0, 0, 0, 0.82);
+  z-index: 999;
+  display: none;
+}
+.modal_up{
+  position: absolute;
+  width: 600px;
+  height: 320px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color: #ffffff;
+  padding: 40px 0;
+  text-align: center;
+  background: url(../image/modal_bg.jpg) no-repeat;
+  box-shadow: 0 0 10px #fff;
+}
+.modal_up h3{
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+.modal_up p{
+  font-size: 1.6rem;
+  line-height: 36px;
+  margin-bottom: 9rem;
+}
+.modal_up a{
+  display: inline-block;
+  padding: 8px 12px;
+  border-radius: 20px;
+  font-size: 13px;
+  background: #311212;
+  line-height: 15px;
+  
+}
+.modal_up a:hover{
+  font-size: 13px;
+  background: #e83f3f;
+  color: #d8d8d8;
+}
+.modal_btn{
+  font-size: 1.5rem;
+  background: #aaa;
+  padding: 5px 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+}
+.modal_btn:hover{
+  background: #000;
+  color: #fff;
+}
+
+#gallery{
+  padding: 3rem 0;
+}
+
+.gtitle{
+  text-align: center;
+}
+.gtitle h4{
+  font-size: 2rem;
+  line-height: 1;
+}
+.gtitle .xo{
+    width: 1000px;
+    height: 200px;
+/*    opacity: 0.3;*/
+}
+.gtitle .xo h2{
+  font-size: 3.5rem;
+  background: #fff;
+  display: inline-block;
+    line-height: 30px;
+    letter-spacing: 1px;
+/*
+  └ 원래 속성이 block이기 때문에, 가로 기본값이 부모크기의 100%이다.
+  그래서 배경색깔을 넣으면 .xo의 크기만큼 다시 다 덮게 되는데!
+  inline-block으로 바꿔주면 내용만큼 크기를 차지해서, 텍스트 뒤에만 배경이 깔림!
+*/
+  padding: 1rem 1rem;
+}
+
+.gtitle p{
+  font-size: 1.5rem;
+  line-height: 1.4;
+  color: #555;
+}
+
+.glist{
+  overflow: hidden;
+  margin: 2rem 0 1rem ;
+}
+.glist li{
+  float: left;
+  width: 240px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  padding: 10px;
+}
+.glist li+li{
+  margin-left: 20px;
+/*  └ .boxalign 1020px - li 가로값 240px*4 = 60px / 여백이 들어갈 공간 3 */
+}
+.glist li a{
+  display: block;
+}
+.glist li a img{
+  width: 100%;
+  
+}
+.glist li .imgbg{
+  overflow: hidden;
+}
+.glist li a span{
+  display: block;
+  padding-left: 0.5rem;
+}
+.glist li a .gtext1{
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-top: 1.5rem;
+}
+.glist li a .gtext2{
+  font-size: 1.1rem;
+  line-height: 1.3;
+  margin: 0.5rem 0 1.5rem;
+  color: #555;
+}
+.glist li a .gtext3{
+  color: #777;
+  margin-bottom: 1rem;
+}
+.glist li:nth-child(even){
+/*
+  li 중에서도 짝수번째 li에게 스타일 적용
+    ≫ 반대말은 "odd"
+*/
+  margin-top: 4rem;
+}
+.glist li:hover{
+  border-color: #1c4c90;
+}
+.glist li .imgbg:hover img{
+  transform: scale(1.2);
+  
+}
+.glist li .gtext3:hover {
+  color: #1c4c90;
+  font-weight: bold;
+}
+
+.gmore{
+  text-align: center;
+	display: none;
+}
+.gmore a{
+  display: inline-block;
+/*
+  - 내용만큼 크기를 차지하기 때문에 별도의 가로값을 설정해주지 않아도 OK
+  - 부모태그에게 text-align: center를 주면 중앙으로 정렬이 되므로 margin:auto를 주지 않아도 OK
+    => 더보기 버튼을 중앙정렬하고 싶으면 inline-block !!
+*/
+  font-size: 1.5rem;
+  font-weight: bold;
+  border: 3px solid #1c4c90;
+  padding: 1rem 2.5rem;
+  color: #1c4c90;
+  border-radius: 30px;
+  box-shadow: 3px 3px 5px #1c4c90;
+  transition: 0.3s;
+}
+.gmore a:hover{
+  background: #1c4c90;
+  color: #fff;
+  box-shadow: 3px 3px 5px #000;
+}
+
+#thema{
+    
+}
+#thema .gtitle{
+	margin: 1rem 0 ;
+}
+
+#thema .xo{
+  height: 100px;
+  background: url("../image/line0.png") no-repeat center;
+  width: 1000px;
+}
+#thema .xo h2{
+  margin: 2rem 0 0;
+}
+#thema .gtitle p{
+  padding: 1rem;
+}
+.tema{
+	background: url(../image/tm_bg.png);
+	width: 1016px;
+	height: 510px;
+	position: relative;
+  overflow: hidden;
+}
+.tema:hover{
+	box-shadow: 0 0 5px #000;
+ 
+}
+.tema li{
+	position: absolute;
+}
+.tema:hover li{
+	animation: sli 1s infinite alternate;
+/*  transform: scale(1.005);*/
+}
+@keyframes sli{
+	0%{opacity: 1}
+	100%{opacity: 0.9;}
+/*	100%{transform: scale(1);opacity: 1;}*/
+}
+.tema:hover .i02{
+    opacity: 1;
+}
+.tema li a{}
+.tema li a img{
+	position: absolute;
+}
+.tema li:nth-child(1){
+	top:40px;
+	left:120px;
+}
+.tema li:nth-child(2){
+	top:70px;
+	left:650px;
+}
+.tema li:nth-child(3){
+	top:190px;
+	left:55px;
+}
+.tema li:nth-child(4){
+	top:370px;
+	left:90px;
+}
+.tema li:nth-child(5){
+	top:200px;
+	left:430px;
+}
+.tema li:nth-child(6){
+	top:210px;
+	left:750px;
+}
+.tema li:nth-child(7){
+	top:380px;
+	left:620px;
+}
+
+.tema li .i02{
+    opacity: 0.2;
+}
+.tema li:hover .i02{
+	animation: te 1s ;
+}
+@keyframes te{
+	0%{transform: scale(1);opacity: 1}
+	100%{transform: scale(1.3);opacity: 0;}
+/*	100%{transform: scale(1);opacity: 1;}*/
+}
+
+
+#info{
+	background: #eee;
+	margin: 5rem 0 0;
+	padding: 4rem 0;
+	overflow: hidden;
+}
+.inbox{
+	width: 48%;
+	padding: 2rem;
+	box-sizing: border-box;
+	color: #fff;
+}
+.inbox h3{
+	font-size: 2rem;
+}
+.inbox p b{
+	font-size: 1.5rem;
+}
+.box1.inbox p{
+	font-size: 1.5rem;
+	margin: 0.5rem 0 1.2rem;
+}
+.box2.inbox p{
+	font-size: 1.5rem;
+	margin: 0.5rem 0 1.2rem;
+}
+.inbox a{
+	font-size: 1.2rem;
+}
+.box2.inbox p b{
+    letter-spacing: 2px;
+}
+/*배경 다르게 주기위해 부여된 클래스*/
+.box1{
+	float: left;
+	background: url(../image/banner_bg02.jpg) no-repeat #2e4e7d 360px;
+}
+.box2{
+	float: right;
+	background: url(../image/banner_bg01.jpg) no-repeat #314252 360px;
+}
+
+
+#grey{
+	overflow: hidden;
+	background: #333;
+	color: #ccc;
+	padding: 3rem;
+}
+
+#grey dl{
+	float:left;
+		width: 185px;
+
+}
+#grey dl+dl{
+	margin-left: 22px;
+/*	1020-160*6=60 60/5임*/
+}
+#grey dl dt{
+	font-size: 1.3rem;
+	font-weight: bold;
+	line-height: 40px;
+	border-bottom: 1px solid #aaa;
+	padding-left: 1rem;
+	margin-bottom: 1rem;
+}
+#grey dl dd:hover{
+	 background: #222	;
+}
+#grey dl dd a{
+	font-size: 1.1rem;
+	line-height: 40px;
+	padding-left: 1rem;
+}

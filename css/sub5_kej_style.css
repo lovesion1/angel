@@ -1,0 +1,227 @@
+@charset "utf-8";
+
+
+
+main{}
+.sub_bg{}
+.sub_bg img{}
+
+section{
+/*  position: relative;*/
+  height: 1000px;
+	width: 1020px;
+}
+
+
+.all{
+  text-align: center;
+  top: 300px;
+  left: 100px;
+}
+.all::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+.all li{
+  float: left;
+  position: relative;
+}
+.all li.active>a{
+  background: #000000;
+  color: #fff;
+}
+.all>li>a:hover{
+  box-shadow: 0 0 3px #000;
+}
+.all>li>a{
+  font-size: 1.6rem;
+  display: inline-block;
+  background: #d8c074;
+  padding: 5px;
+  width: 150px;
+  margin: 15px;
+  border-radius: 50px;
+}
+.all>li>div{
+  position: absolute;
+  width: 1200px;
+  height: 0;
+  overflow: hidden;
+}
+.all>li.active>div{
+  height: 1000px;
+}
+.notice h3,.mail h3,.event h3{
+  font-size: 2rem;
+  padding: 2rem;
+  letter-spacing: 3px;
+}
+.icon img{
+  margin-bottom: 3rem;
+}
+
+.mail{
+	position: absolute;
+  height: 1500px;
+	left: -190px;
+}
+.event{
+	position: absolute;
+	left: -380px;
+}
+
+#table{
+  width: 1020px;
+  margin: auto ;
+}
+
+table{
+  width: 900px;
+  margin-bottom: 4rem;
+  margin-left: 4rem;
+}
+table tr{
+  line-height: 50px;
+  border: 1px solid #ccc
+  
+}
+table tr th .t_title{
+  width: 500px;
+}
+table tr th{
+  font-size: 1.5rem;
+  background: #817d7d;
+  color: #fff;
+}
+table tr:nth-child(2){
+  font-weight: bold;
+}
+table tr td{
+  font-size: 1.4rem;
+}
+table tr td:nth-child(2){
+  width: 500px;
+}
+.bselect{
+  overflow: hidden;
+/*  margin-left: 30rem;*/
+  width: 380px;
+  margin: auto;
+}
+.bselect select{
+   float: left;
+  width: 150px;
+	height: 35px;
+	border: none;
+	background: #111;
+	color: #ccc;
+	border-radius: 5px;
+	padding-left: 2rem;
+	font-size: 1.2rem; 
+}
+.bselect input{
+  float: left;
+  line-height: 33px;
+}
+.noticebtn{
+   float: left;
+	width: 50px;
+	height: 35px;
+	border: none;
+	background: #111;
+	color: #ccc;
+	border-radius: 5px;
+	padding-left: 0.1rem;
+	font-size: 1.2rem; 
+}
+
+.letter{
+  width: 1020px;
+/*  height: 1500px;*/
+  margin: auto;
+}
+.letter form{
+  background: url(../image/letter.png) no-repeat;
+  width: 1000px;
+  height: 730px;
+  position: relative;
+  
+}
+.letter form .to{
+  position : absolute;
+  top: 51px;
+  left: 139px;
+  line-height: 35px;
+  font-size: 1.6rem;
+  padding: 0 10px ;
+  width: 129px;
+  background: transparent;
+  border: none;
+}
+.letter form textarea{
+  position : absolute;
+  left: 142px;
+  top: 162px;
+  line-height: 45px;
+  width: 780px;
+  height: 395px;
+  font-size: 1.7rem;
+  padding: 10px;
+  background: transparent;
+  border: none;
+}
+.letter form .from{
+  position : absolute;
+  top: 620px;
+  right: 40px;
+  line-height: 35px;
+  font-size: 1.5rem;
+  padding: 0 10px ;
+  width: 132px;
+  background: transparent;
+  border: none;
+}
+.letter form .f_all{
+  font-size: 1.5rem;
+  display: inline-block;
+  margin: 10px;
+  position: absolute;
+  bottom: 10px;
+  left: 420px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.letter form .f_all submit{
+  background: #b54500;
+  color: #fff;
+  padding: 5px 20px;
+  border-radius: 10px;
+  text-align: center;
+  margin-right: 20px;
+  
+}
+.letter form .f_all reset{
+  background: #b54500;
+  color: #fff;
+  padding: 5px 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+.letter form .f_all submit:hover{
+  background: #000;
+  color: #fff;
+  padding: 5px 20px;
+  border-radius: 10px;
+  text-align: center;
+  margin-right: 20px;
+}
+.letter form .f_all reset:hover{
+  background: #000;
+  color: #fff;
+  padding: 5px 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+
